@@ -1,2 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+.slider-images {
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.slider-images .slide {
+    /* background-color: aquamarine; */
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.slider-images .slide.mostrar {
+    opacity: 1;
+}
+
+.slide-rosa {
+    background: url(../images/flores-rosas.png);
+}
+
+.slide-verde {
+    background: url(../images/flores-verdes.png);
+}
+
+.slide-marrom {
+    background: url(../images/montanhas.png);
+}
+
+.slide-azul {
+    background: url(../images/lago.png);
+}
+
+.seta-voltar, .seta-avancar {
+    /* background-color: aqua; */
+    position: absolute;
+    z-index: 1;
+}
+
+.seta-voltar {
+    left: 4%;
+    transform: rotate(180deg);
+}
+
+.opacidade {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.seta-avancar {
+    right: 4%;
+}
+
+.seta-voltar .imagem-seta, .seta-avancar .imagem-seta {
+    width: 8rem;
+    height: 10rem;
+}
+
+.conteudo {
+    background-color: #ffffff;
+    margin-left: 18rem;
+    padding: 60px 65px;
+    border-radius: 10px;
+    width: 62rem;
+    
+}
+
+.conteudo .titulo {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 81px;
+}
+
+.conteudo .texto {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 45px;
+}
+
+.conteudo .botao {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.botao.rosa {
+    color: #C50000;
+}
+
+.botao.verde {
+    color: #D9DD10;
+}
+
+.botao.marrom {
+    color: #A63A17;
+}
+
+.botao.azul {
+    color: #10ACDD;
+}
