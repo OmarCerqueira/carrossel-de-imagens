@@ -8,8 +8,9 @@ Passo 1 - Clicar na seta avançar e ir para o próximo slide.
     - adicionar um evento
     - remover classe mostrar
     - adicionar classe mostrar
+    - criar uma condição que retorne e pare de executar
     Passo 1.1 - Mudar opacidade da seta avançar quando alcançar o último slide.
-        - criar uma condição que retorne e pare de executar
+        -criar variável e condição para remover e adcionar classe opacidade na seta avançar
 
 Passo 2 - Clicar na seta voltar e ir para o slide anterior.
     - pegar o elemento da seta voltar
@@ -17,8 +18,9 @@ Passo 2 - Clicar na seta voltar e ir para o slide anterior.
     - adicionar um evento
     - remover classe mostrar
     - adicionar classe mostrar
+    - criar uma condição de return quando isso acontecer
     Passo 2.2 - Mudar a opacidade da seta quando não for mais o primeiro slide.
-        -criar uma condição de return quando isso acontecer
+        -criar variável e condição para remover e adcionar classe opacidade na seta voltar
  */
 
 
