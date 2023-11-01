@@ -82,6 +82,45 @@ Durante a contrução do projeto foi necessário, primeiramente, a análise do q
     
 }
 ```
+```javascript
+setaAvancar.addEventListener('click', () => {
+    if (imagemAtual == imagens.length - 1) {
+        return;
+    }
+    
+    esconderImagemAberta();
+
+    imagemAtual++;
+
+    adicionarImagemAtual();
+
+    adicionarERemoverOpacidadeSetas();
+});
+```
+```javascript
+function adicionarERemoverOpacidadeSetas() {
+    let naoEhPrimeiraImagem = imagemAtual != 0;
+    if (naoEhPrimeiraImagem) {
+        setaVoltar.classList.remove('opacidade');
+    } else {
+        setaVoltar.classList.add('opacidade');
+    }
+
+    let ehUltimaImagem = imagemAtual == imagens.length - 1;
+    if (ehUltimaImagem) {
+        setaAvancar.classList.add('opacidade');
+    } else {
+        setaAvancar.classList.remove('opacidade');
+    }
+}
+```
+```javascript
+const setaAvancar = document.querySelector('#seta-avancar');
+const setaVoltar = document.querySelector('#seta-voltar');
+const imagens = document.querySelectorAll('.slide');
+// console.log(imagens);
+let imagemAtual = 2;
+```
 ## Autor
 
 - LinkedIn - [Omar Cerqueira](https://www.linkedin.com/in/omar-cerqueira-b83317226/)
